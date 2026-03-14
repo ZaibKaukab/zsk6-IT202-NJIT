@@ -48,3 +48,5 @@ SELECT bowlerid, name FROM bowlers_zsk6 ORDER BY name;
 SELECT COUNT(score) AS games, AVG(score) AS average FROM games_zsk6 WHERE bowlerid = 102;
 
 SELECT COUNT(score) AS games, AVG(score) AS average FROM games_zsk6 WHERE bowlerid = 103;
+
+SELECT * FROM exercise_zsk6.games_zsk6 JOIN exercise_zsk6.bowlers_zsk6 ON games_zsk6.bowlerid = bowlers_zsk6.bowlerid WHERE games_zsk6.bowlerid = 101;
